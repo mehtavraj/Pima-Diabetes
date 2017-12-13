@@ -12,3 +12,8 @@ dataset.head()
 #Split the data into X and Y
 X = dataset.iloc[:,0:8]
 Y = dataset.iloc[:,8]
+
+# split data into train and test sets with pre-defined seed=7 for future reference
+seed = 7
+test_size = 0.33
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=test_size, random_state=seed)
