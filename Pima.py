@@ -8,3 +8,7 @@ from sklearn.metrics import accuracy_score
 #Loading dataset and to retrieve first 5 rows
 dataset = pd.read_csv('pima-indians-diabetes.csv')
 dataset.head()
+
+#Split the data into X and Y
+X = dataset[:,0:8]
+Y = dataset[:,8]
