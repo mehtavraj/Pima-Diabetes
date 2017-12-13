@@ -22,3 +22,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=test_size, r
 # Used Scikit-learn to fit the model
 model = XGBClassifier()
 model.fit(X_train, y_train)
+
+# Use Fitted training model to make predictions on test data
+y_pred = model.predict(X_test)
+predictions = [round(value) for value in y_pred]
+
