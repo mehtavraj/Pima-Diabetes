@@ -29,3 +29,4 @@ predictions = [round(value) for value in y_pred]
 
 #Evaluate the performance of the developed model after predictions
 accuracy = accuracy_score(y_test, predictions)
+print("Accuracy: %.2f%%" % (accuracy * 100.0))
