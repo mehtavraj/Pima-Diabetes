@@ -27,3 +27,5 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 predictions = [round(value) for value in y_pred]
 
+#Evaluate the performance of the developed model after predictions
+accuracy = accuracy_score(y_test, predictions)
